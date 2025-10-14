@@ -1,14 +1,15 @@
-'use client';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
-import type { User } from '../../types/user';
+//'use client';
+//import { useEffect, useState } from 'react';
+import users from "../../data/users.json";
+//import axios from 'axios';
+//import type { User } from '../../types/user';
 
 export default function UsersPage() {
-  const [users, setUsers] = useState<User[]>([]);
+  //const [users, setUsers] = useState<User[]>([]);
 
-  useEffect(() => {
+  /*useEffect(() => {
     axios.get<User[]>('/api/users').then((res) => setUsers(res.data));
-  }, []);
+  }, []);*/
 
   return (
     <div>
